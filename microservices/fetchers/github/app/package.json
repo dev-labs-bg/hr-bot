@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "GitHub user fetcher",
   "author": "Jordan Enev jordan@devlabs.bg",
-  "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon server.js"
   },
   "dependencies": {
     "express": "^4.14"
