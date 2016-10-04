@@ -5,4 +5,4 @@ services:
     ports:
     - "8081:8080"
     volumes:
-      - ./microservices/fetchers/github/app/:/usr/src/app/
+      - ./microservices/fetchers/github/app/:/usr/src/github/app/
