@@ -1,0 +1,8 @@
+version: '2'
+services:
+  fetchers_github:
+    build: .
+    ports:
+    - "8081:8080"
+    volumes:
+      - ./app/:/usr/src/github/app/

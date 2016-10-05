@@ -1,8 +1,0 @@
-version: '2'
-services:
-  fetchers_github:
-    build: ./microservices/fetchers/github/
-    ports:
-    - "8081:8080"
-    volumes:
-      - ./microservices/fetchers/github/app/:/usr/src/github/app/

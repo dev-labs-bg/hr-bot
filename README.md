@@ -2,11 +2,16 @@
 *TODO description*
 
 ---
+# Microservices
+- Users - microservices/users/
+- GitHub users fetcher - microservices/fetchers/github/
 # Installation
 ## Requirements
 - Docker installation
 
-## Start the project
-In the project root first we build our Docker images and then we run all containers:
-1. `docker-compose build`
-2. `docker-compose up -d`
+## Start the microservices
+* Always go to project root, before executing next commands.
+### Users
+`cd microservices/users/ && docker-compose up -d`
+### GitHub users fetcher
+`cd microservices/fetchers/github/ && docker-compose up -d`
