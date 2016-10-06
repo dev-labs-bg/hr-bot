@@ -10,4 +10,14 @@ namespace AppBundle\Repository;
  */
 class UserRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function getBySkills($skills) {
+        return $this->getEntityManager()
+            ->createQuery('
+              SELECT u, s FROM AppBundle:User u
+              JOIN u.skills s
+              WHERE s.name in (:skills)
+            ')
+            ->setParameter('skills', $skills)
+            ->getResult();
+    }
 }

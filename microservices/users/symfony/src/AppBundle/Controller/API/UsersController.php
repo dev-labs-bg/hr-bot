@@ -4,17 +4,28 @@ namespace AppBundle\Controller\API;
 
 use FOS\RestBundle\Controller\FOSRestController;
 use Symfony\Component\HttpFoundation\Request;
+use FOS\RestBundle\Request\ParamFetcher;
+use FOS\RestBundle\Controller\Annotations\QueryParam;
 use AppBundle\Entity\User;
 use AppBundle\Form\Type\UserType;
 
 class UsersController extends FOSRestController
 {
 
-    public function getUsersAction()
+    /**
+     * @QueryParam(name="skills", description="List of skills comma separated.")
+     *
+     * @param string $skills
+     */
+    public function getUsersAction($skills)
     {
-        $users = $this->getDoctrine()
-            ->getRepository('AppBundle:User')
-            ->findAll();
+        $users = $this->getDoctrine()->getRepository('AppBundle:User');
+        if ($skills) {
+            $skills = explode(',', $skills);
+            $users = $users->getBySkills($skills);
+        } else {
+            $users = $users->findAll();
+        }
 
         $data = array('users' => $users);
         $view = $this->view($data);
