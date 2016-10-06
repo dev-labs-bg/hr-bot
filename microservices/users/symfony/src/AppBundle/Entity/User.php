@@ -4,6 +4,7 @@ namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * User
@@ -22,6 +23,11 @@ class User
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="Skill", cascade={"persist"})
+     */
+    protected $skills;
 
     /**
      * @var string
@@ -43,6 +49,11 @@ class User
      * @ORM\Column(name="last_name", type="string", length=255)
      */
     private $lastName;
+
+    public function __construct()
+    {
+        $this->skills = new ArrayCollection();
+    }
 
 
     /**
@@ -125,6 +136,45 @@ class User
     public function getLastName()
     {
         return $this->lastName;
+    }
+
+    /**
+     * Get Skills
+     *
+     * Please refer to next Symfony documentation acticle,
+     * for more info why this method is required for enabling
+     * Many to Many relationship:
+     * @link https://symfony.com/doc/current/form/form_collections.html
+     *
+     * @return ArrayCollection
+     */
+    public function getSkills()
+    {
+        return $this->skills;
+    }
+
+    /**
+     * Add skill
+     *
+     * Please refer to getSkills() method.
+     *
+     * @param Skill $skill
+     */
+    public function addSkill(Skill $skill)
+    {
+        $this->skills->add($skill);
+    }
+
+    /**
+     * Remove skill
+     *
+     * Please refer to getSkills() method.
+     *
+     * @param Skill $skill
+     */
+    public function removeSkill(Skill $skill)
+    {
+        $this->skills->removeElement($skill);
     }
 }
 
