@@ -3,7 +3,17 @@
 
 ---
 # Microservices
-- Users - microservices/users/
+- Users:
+    - Path `microservices/users/`
+    - REST API Endpoints:
+        - [GET] `api.localhost/users` - Get all users. You can filter users by `skills` comma separated get parameter. It will return users, those have minimum one of selected `skills`.
+        - [POST] `api.localhost/users` - Create an user. You have to pass *string* `email`,*string* `first_name`,*string* `last_name`,*array* `skills`. Example data:
+        ```{
+         	"email": "jordan@devlabs.bg",
+         	"first_name": "Jordan",
+         	"last_name": "Enev",
+         	"skills": [{"name": "JS"},{"name": "PHP"}]
+         }```
 - GitHub users fetcher - microservices/fetchers/github/
 
 # Installation
