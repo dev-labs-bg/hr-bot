@@ -1,3 +1,8 @@
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+
+users:
+    type:     rest
+    host:     api.localhost
+    resource: AppBundle\Controller\API\UsersController
