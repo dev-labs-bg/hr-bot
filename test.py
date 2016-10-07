@@ -7,27 +7,6 @@ from transitions import Machine
 
 from goapy import Planner, Action_List
 
-# queries = []
-# for q in queries:
-#     process_query(q)
-
-
-# NOTE <Yavor>: I have no idea why transitions needs an object for the model.
-class Conversation(object):
-    def __init__(self, ctx):
-        self.ctx = ctx
-
-    def is_language_related(self):
-        if self.ctx.get('is_language_related', None) is None:
-            return False
-        languages = ', '.join([l for l in ctx['is_language_related']])
-        return "So, you have experience with %s?" % languages
-
-    def ask_about_experience(ctx):
-        return "What programming experience do you have?"
-        pass
-
-
 # NOTE <Yavor>: This is a hacked together proof of concept to show that you can
 # use a dependency graph and a goal state, and let the bot resolve the action plan
 # to reach the goal.
