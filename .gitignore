@@ -1,0 +1,4 @@
+*.pyc
+goap/
+goapy/
+tmp/
