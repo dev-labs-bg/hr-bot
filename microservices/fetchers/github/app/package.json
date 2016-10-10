@@ -11,6 +11,7 @@
     "github": "^3.1.1",
     "github-client": "^0.8.0",
     "bluebird": "^3.0", 
-    "mongodb": "^2.2"
+    "mongodb": "^2.2", 
+    "request": "^2.75.0"
   }
 }
