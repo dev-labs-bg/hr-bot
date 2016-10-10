@@ -1,4 +1,4 @@
- ### Disclaimer:
+### Disclaimer:
 
 ![bot](https://gitlab.com/dev-labs-bg/hr-bot/raw/6b2d2c518990cdea6f106e586de3e88247fb74dc/img/bot.JPG)
 
