@@ -22,22 +22,10 @@ TL;DR: Bot, който оставя HR без работа.
 - Радо   - GitHub User Fetcher 
 - Данчо  - Имплементация на Microservices с Docker, User REST API 
 
-# Ден втори
-- Явка
-- Данчо
-- Радо
-
-# Ден трети
-- Явка
-- Данчо
-- Радо
-
-# Ден четвърти
-- Явка
-- Данчо
-- Радо
-
-# Ден пети
+# Ден втори, трети, четвърти, пети
+- [Явка](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/bot/Readme.md)
+- [Данчо](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/Sprint-Jordan-summary.md)
+- [Радо](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/Sprint-Rado-summary.md)
 
 
 # Какво следва
