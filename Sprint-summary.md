@@ -2,7 +2,7 @@
 
 # Екип
 - Явка - yavor@devlabs.bg
-- Радо - rado@devlabs.bg
+- Радо - radoslav@devlabs.bg
 - Данчо - jordan@devlabs.bg
 
 # Идея
@@ -22,13 +22,20 @@ TL;DR: Bot, който оставя HR без работа.
 - Радо   - GitHub User Fetcher 
 - Данчо  - Имплементация на Microservices с Docker, User REST API 
 
-# Ден втори, трети, четвърти, пети
+# Ден втори, трети, четвърти, пети - лични мемоари
 - [Явка](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/Sprint-Yavka-summary.md)
 - [Данчо](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/Sprint-Jordan-summary.md)
 - [Радо](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/Sprint-Rado-summary.md)
 
 
-# Какво следва
+# Какво постигнахме?
+- Имаме 2 бота. Единият [Custom](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/Sprint-Yavka-summary.md), другия разписан на [Meya](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/Sprint-Jordan-summary.md).
+- Имаме 2 Microservices (Docker) - [за управление на потребители](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/Sprint-Jordan-summary.md) и [за извличване на GitHub потребители с техните skills](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/Sprint-Rado-summary.md).
+
+# Demo
+- ...
+
+# Какво следва?
 - Създаване на "умен" бот. Определено това е най-голямото предизвикателство. Като начало - може да се изпробват какви са възможностите на Meya.
 - Свързване на различните компоненти помежду им и автоматизиране на целия процес.
 - Разписване на още Fetchers (примерно StackOverflow).

@@ -5,28 +5,29 @@ HR Bot that finds the right persons for a Recruiter's job. It has automated netw
 
 # Installation
 
-## Requirements
+### Requirements:
 - Docker installation
 - If you are using UNIX like OS, then make sure `microservices/users/symfony/var/` has `777` permissions. It's needed, because the containers write in the host file system. Otherwise - there is a permission issue. We can improve the workaround it later.
 
-## Start the microservices
+### How to start the microservices?
 Always go to project root, before executing next commands.
 
-### Users
-[TODO - next steps can be automated]
-- Build Docker images and run the containers: `cd microservices/users/ && docker-compose build && docker-compose up -d`
-- Login in php-fpm container (you can find its id with `docker ps`): `docker exec -it <container id> sh
+#### Users microservice:
+
+0. Build Docker images and run the containers: `cd microservices/users/ && docker-compose build && docker-compose up -d`
+0. Login in php-fpm container (you can find its id with `docker ps`): `docker exec -it <container id> sh
 `
-- Go to symfony folder: `cd var/www/symfony`
-- Install composer dependencies: `php composer.phar install`
-- Update Symfony database schema: `php bin/console doctrine:schema:update --force`
-- Now you can access the project on http://localhost/
+0. Go to symfony folder: `cd var/www/symfony`
+0. Install composer dependencies: `php composer.phar install`
+0. Update Symfony database schema: `php bin/console doctrine:schema:update --force`
+0. Now you can access the project on http://localhost/
 
-### GitHub Users Fetcher
-`cd microservices/fetchers/github/ && docker-compose build && docker-compose up -d`
-- Now you can access the project on http://localhost:8081/
+#### GitHub Users Fetcher microservice:
 
-# Microservices
+0. `cd microservices/fetchers/github/ && docker-compose build && docker-compose up -d`
+0. Now you can access the project on http://localhost:8081/
+
+# Microservices details:
 - **Users**:
     - Path `microservices/users/`
     - REST API Endpoints:
@@ -42,3 +43,6 @@ Always go to project root, before executing next commands.
     - Path `microservices/fetchers/github/`
     - API Endpoints:
         - [GET] http://localhost:8081/fetch - On each get request it will fetch 10 GitHub users and will return them as response.
+
+# Demo
+- ...
