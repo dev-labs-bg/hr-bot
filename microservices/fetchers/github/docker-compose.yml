@@ -6,3 +6,15 @@ services:
     - "8081:8080"
     volumes:
       - ./app/:/usr/src/github/app/
+    links:
+    - mongo
+  mongo:
+    image: mongo
+    ports:
+    - "27017:27017"
+    volumes:
+    - mongodb:/data/db
+volumes:
+  mongodb:
+    external:
+        name: testvol
