@@ -1,0 +1,5 @@
+nltk==3.2.1
+PyYAML==3.12
+six==1.10.0
+textblob==0.11.1
+transitions==0.4.1
