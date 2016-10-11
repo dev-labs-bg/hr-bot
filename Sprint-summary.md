@@ -23,7 +23,7 @@ TL;DR: Bot, който оставя HR без работа.
 - Данчо  - Имплементация на Microservices с Docker, User REST API 
 
 # Ден втори, трети, четвърти, пети
-- [Явка](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/bot/Readme.md)
+- [Явка](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/Sprint-Yavka-summary.md)
 - [Данчо](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/Sprint-Jordan-summary.md)
 - [Радо](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/Sprint-Rado-summary.md)
 
