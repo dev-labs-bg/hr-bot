@@ -10,9 +10,10 @@ HR Bot that finds the right persons for a Recruiter's job. It has automated netw
 - If you are using UNIX like OS, then make sure `microservices/users/symfony/var/` has `777` permissions. It's needed, because the containers write in the host file system. Otherwise - there is a permission issue. We can improve the workaround it later.
 
 ### How to start the bot:
-You need to have `python 2.7` and `virtualenv` installed. You can follow these installation guides if you don't already have them:
+You need to have `python 2.7` and `virtualenv` and `virtualenvwrapper` installed. You can follow these installation guides if you don't already have them:
 - [Python install guide](https://wiki.python.org/moin/BeginnersGuide/Download)
 - [Virtualenv install guide](https://virtualenv.pypa.io/en/stable/installation/)
+- [Virtualenvwrapper install guide](http://virtualenvwrapper.readthedocs.io/en/latest/install.html)
 
 1. Navigate to the bot directory by running `cd bot`
 1. Create a virtual environment for the project by running `mkvirtualenv hrkiri-bot` (you need to do this only once).
