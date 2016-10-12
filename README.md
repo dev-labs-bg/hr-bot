@@ -4,8 +4,6 @@ HR Bot that finds the right persons for a Recruiter's job. It has automated netw
 # Sprint summary
 - [BG](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/Sprint-summary.md)
 
----
-
 # Installation
 
 ### Requirements:
