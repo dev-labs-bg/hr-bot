@@ -33,17 +33,20 @@ Always go to project root, before executing next commands.
     - Path `microservices/users/`
     - REST API Endpoints:
         - [GET] `localhost/users` - Get all users. You can filter users by `skills` comma separated get parameter. It will return users, those have minimum one of selected `skills`.
-        - [POST] `localhost/users` - Create an user. You have to pass *string* `email`,*string* `first_name`,*string* `last_name`,*array* `skills`. Example data:
-        ```{
+        - [POST] `localhost/users` - Create an user. You have to pass *string* `email`, *string* `first_name`, *string* `last_name`, *array* `skills`. Example data:
+        
+        ```
+        {
          	"email": "jordan@devlabs.bg",
          	"first_name": "Jordan",
          	"last_name": "Enev",
          	"skills": [{"name": "JS"},{"name": "PHP"}]
-         }```
+        }
+        ```
 - **GitHub Users Fetcher**
     - Path `microservices/fetchers/github/`
     - API Endpoints:
-        - [GET] http://localhost:8081/fetch - On each get request it will fetch 10 GitHub users and will return them as response.
+        - [GET] `localhost:8081/fetch` - On each get request it will fetch 10 GitHub users and will return them as response.
 
 # Demo
 - ...
