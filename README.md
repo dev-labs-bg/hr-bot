@@ -31,8 +31,8 @@ Always go to project root, before executing next commands.
 - **Users**:
     - Path `microservices/users/`
     - REST API Endpoints:
-        - [GET] `localhost/users` - Get all users. You can filter users by `skills` comma separated get parameter. It will return users, those have minimum one of selected `skills`.
-        - [POST] `localhost/users` - Create an user. You have to pass *string* `email`,*string* `first_name`,*string* `last_name`,*array* `skills`. Example data:
+        - [GET] `api.localhost/users` - Get all users. You can filter users by `skills` comma separated get parameter. It will return users, those have minimum one of selected `skills`.
+        - [POST] `api.localhost/users` - Create an user. You have to pass *string* `email`,*string* `first_name`,*string* `last_name`,*array* `skills`. Example data:
         ```{
          	"email": "jordan@devlabs.bg",
          	"first_name": "Jordan",
