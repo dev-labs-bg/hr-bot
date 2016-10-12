@@ -8,12 +8,14 @@
 FYI Проблемите с правата са свързани с това, че Guest Container и Host machine имат обща споделена папка, в която се намира Symfony. Съответно всички процеси се изпълняват на Guest и когато се генерират логове, то те се записват от Guest на Host machine. Пробвах по-различни начини да разреша проблема, но в крайна сметка "заших" 777 на logs/ директорията.
 
 # Ден четвърти
-Имплементирах GET/POST localhost/users. Съответно при GET връщам всички потребители с техните skills, като поддържаме и филтрация по skills. При POST добавяме потребители и skills към тях. Тук се предизвиках и реших всичко да имплементирам със Symfony Form Types. Разбира се - можех и да го напляскам директно в контролена, но ... няма смисъл, нали? Отначало е малко трудно, но както Цецо сподели - когато схванеш идеята, после не е толкова голям филм.
+Имплементирах `GET/POST localhost/users`. Съответно при GET връщам всички потребители с техните skills, като поддържаме и филтрация по skills. При POST добавяме потребители и skills към тях. Тук се предизвиках и реших всичко да имплементирам със Symfony Form Types. Разбира се - можех и да го напляскам директно в контролена, но ... няма смисъл, нали? Отначало е малко трудно, но както Цецо сподели - когато схванеш идеята, после не е толкова голям филм.
 
 # Ден пети
 Имаме REST User Microservice за управления на потребители, имаме GitHub User Fetcher. Съответно на база разговорите с Явката през седмицата и BOT казусите (т.е. количеството натрупан опит по AI) - реших да пробвам в рамките на ден да "скалъпя" нещо работещо.
 Попаднах на няколко интересни services (Community Driven), които разпознват в дадено изречение отделните думи какво означават http://recast.ai/.
-Примерно в изречението: "I need to know the weather in San Francisco", разпознава че "I" == Pronoun, "San Francisco" == Location.
+Примерно в следващото изречение разпознава, че "I" == Pronoun, "San Francisco" == Location: 
+> "I need to know the weather in San Francisco"
+
 Съответно като направя Request към тяхното API с конкретния текст, получавам следната информация:
 ```
 {
@@ -71,6 +73,24 @@ FYI Проблемите с правата са свързани с това, ч
 - Има интеграция със Slack, Messanger и др. Важното е, че има Web hooks API и по този начин може да осъществим EMAIL комуникация.
 
 Успях да направя примерен БОТ, който като го попиташ за работа - започва да те разпитва какви програмни езици знаеш и какъв ти е опита с тях.
+```
+Me: Hello
+HR Bot: Hello
+Me: I'm searching for a new job opportunity.
+HR Bot: What's your name?
+Me: Jordan
+HR Bot: Nice to meet you Jordan!
+HR Bot: Now I'll ask you a few questions and will try to find the perfect job for you! Get ready?
+HR Bot: What programming skills do you have? (Please write them comma separated. For example - php, js, python)
+Me: php, js, python
+HR Bot: What's your experience with python (in years)?
+Me: 1
+HR Bot: What's your experience with js (in years)?
+Me: 2
+HR Bot: What's your experience with php (in years)?
+Me: 3
+HR Bot: I'll reach you later, when I have the right job for you! Good bye :)
+```
 
 # Заключение
 - При разписването на Docker environments - абстракцията, която получаваш за конфигурация е определено developers friendly. Обаче всичко останало, което е от другата страна на DevOps, а именно server administration - е малко по-трудно. Положителното е, че веднъж като конфигурираш един Docker environment - после единствено го поддържаш. Разбира се - първо проверете дали някой вече не го е направил.
