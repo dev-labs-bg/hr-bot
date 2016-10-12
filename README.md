@@ -18,6 +18,7 @@ You need to have `python 2.7` and `virtualenv` and `virtualenvwrapper` installed
 1. Navigate to the bot directory by running `cd bot`
 1. Create a virtual environment for the project by running `mkvirtualenv hrkiri-bot` (you need to do this only once).
 2. Update the bot requirements with `pip install -r requirements.txt`
+3. Update the NLTK dictionaries with `python -m textblob.download_corpora`
 3. Run the bot with `./test.py`
 
 In case you want to exit the virtual environment, run `deactivate`. The command to enter it again is `workon hrkiri-bot`.
