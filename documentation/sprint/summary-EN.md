@@ -34,7 +34,7 @@ You can see the initial project sketch below:
 - We have 2 Microservices (Docker) - [for user management](https://github.com/dev-labs-bg/hr-bot/blob/master/documentation/sprint/jordan-summary-EN.md) and one [for GitHub Users Fetching](https://github.com/dev-labs-bg/hr-bot/blob/master/documentation/sprint/rado-summary-EN.md).
 
 # Demo
-- [Video - BG](https://www.youtube.com/watch?v=2KjhpK7ilKU&list=PLy-56ctrBPh-f8FM-MhA-vXfwr2odnmkj&index=2)
+- [BG](https://www.youtube.com/watch?v=2KjhpK7ilKU&list=PLy-56ctrBPh-f8FM-MhA-vXfwr2odnmkj&index=2)
 
 # What's next
 - Creating a "smart" HR Bot. Definitely that is the biggest challenge we have. For a start - we can test what are the Meya's limits and capabilities.
