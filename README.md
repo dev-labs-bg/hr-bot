@@ -1,4 +1,4 @@
-Hey, first checkout **Sprint summary section** please. There you can find details about current state of the project, what we achieved and what's next.
+Hey, first checkout **Sprint summary section** please. There you can find details about current state of the project, what we achieved and what's next. Without that background knowledge, next lines would be misleading.
 
 In the current README file there is generic information about the project and instructions how you can run already implemented features.
 
