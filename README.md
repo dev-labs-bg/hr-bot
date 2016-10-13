@@ -17,11 +17,9 @@ Here you can find details about current state of the project, what we achieved a
 
 # Installation
 
-### Requirements:
-- Docker installation
-- If you are using UNIX like OS, then make sure `microservices/users/symfony/var/` has `777` permissions. It's needed, because the containers write in the host file system. Otherwise - there is a permission issue. We can improve the workaround it later.
-
 ### How to start the bot:
+
+#### Requirements:
 You need to have `python 2.7` and `virtualenv` and `virtualenvwrapper` installed. You can follow these installation guides if you don't already have them:
 - [Python install guide](https://wiki.python.org/moin/BeginnersGuide/Download)
 - [Virtualenv install guide](https://virtualenv.pypa.io/en/stable/installation/)
@@ -35,8 +33,12 @@ You need to have `python 2.7` and `virtualenv` and `virtualenvwrapper` installed
 
 In case you want to exit the virtual environment, run `deactivate`. The command to enter it again is `workon hrkiri-bot`.
 
-### How to start the microservices?
+### How to start the microservices:
 Always go to project root, before executing next commands.
+
+#### Requirements:
+- Docker installation
+- If you are using UNIX like OS, then make sure `microservices/users/symfony/var/` has `777` permissions. It's needed, because the containers write in the host file system. Otherwise - there is a permission issue. We can improve the workaround it later.
 
 #### Users microservice:
 
