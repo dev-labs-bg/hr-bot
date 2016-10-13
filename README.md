@@ -1,3 +1,6 @@
+Hey, first checkout **Sprint summary section** please. There you can find details about current state of the project, what we achieved and what's next.
+In the current README file there is generic information about the project and instructions how you can run already implemented features.
+
 # HR Bot
 HR Bot that finds the right persons for a Recruiter's job. It has automated network of users. On a Recruiter job opportunity, the bot starts conversation with the users those matched the job requirements.
 
