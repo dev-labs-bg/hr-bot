@@ -3,6 +3,9 @@ HR Bot that finds the right persons for a Recruiter's job. It has automated netw
 
 ---
 
+# Sprint summary
+- [BG](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/Sprint-summary.md)
+
 # Installation
 
 ### Requirements:
@@ -62,4 +65,4 @@ Always go to project root, before executing next commands.
         - [GET] `localhost:8081/fetch` - On each get request it will fetch 10 GitHub users and will return them as response.
 
 # Demo
-- ...
+- [Video - BG](https://www.youtube.com/watch?v=2KjhpK7ilKU&list=PLy-56ctrBPh-f8FM-MhA-vXfwr2odnmkj&index=2)

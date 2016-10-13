@@ -33,7 +33,7 @@ TL;DR: Bot, който оставя HR без работа.
 - Имаме 2 Microservices (Docker) - [за управление на потребители](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/Sprint-Jordan-summary.md) и [за извличване на GitHub потребители с техните skills](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/Sprint-Rado-summary.md).
 
 # Demo
-- ...
+- [Видео](https://www.youtube.com/watch?v=2KjhpK7ilKU&list=PLy-56ctrBPh-f8FM-MhA-vXfwr2odnmkj&index=2)
 
 # Какво следва?
 - Създаване на "умен" бот. Определено това е най-голямото предизвикателство. Като начало - може да се изпробват какви са възможностите на Meya.
