@@ -98,7 +98,7 @@ HR Bot: What's your experience with php (in years)?
 Me: 3
 HR Bot: I'll reach you later, when I have the right job for you! Good bye :)
 ```
-![flow](https://gitlab.com/dev-labs-bg/hr-bot/raw/master/meya-flow.png)
+![flow](https://raw.githubusercontent.com/dev-labs-bg/hr-bot/master/documentation/sprint/img/meya-flow.png)
 
 # Conclusion
 - The abstraction while writing Docker configuration is developers friendly. But everything on otherside of DevOps, namely server administration - it's a lil bit difficult and tricky for developers with less server administration experience.
