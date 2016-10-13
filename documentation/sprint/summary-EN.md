@@ -15,7 +15,7 @@ We made a rough draft of the project scope. The idea was to automate gathering i
 After writing all the steps down, it became clear we can split everything into its own module. Jordan proposed we structure things as separate micro-services that talk to each-other via a REST API. We decided Rado can tackle the REST API and GitHub profile parser, as he had never worked with a REST service. Jordan tasked himself with figuring out how to structure the micro-services and build the containers. I was left with researching how to build the bot -- the idea being that Jordan and Rado could finish their tasks quickly and join me.
 
 You can see the initial project sketch below:
-![Day 1](https://gitlab.com/dev-labs-bg/hr-bot/raw/a01cd34310a64a1861fe374552a6fde6a4a2299d/bot/img/day1.jpg)
+![Day 1](https://raw.githubusercontent.com/dev-labs-bg/hr-bot/master/documentation/sprint/img/day1.jpg)
 
 **In result of first meeting we delegate the task in the following order**:
 
@@ -24,14 +24,14 @@ You can see the initial project sketch below:
 - Jordan - Docker Microservices and User REST API 
 
 # Day two, three, fourth, fifth - daily notes
-- [Yavka](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/Sprint-Yavka-summary.md)
-- [Jordan](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/Sprint-Jordan-summary.md)
-- [Rado](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/Sprint-Rado-summary.md)
+- [Yavka](https://github.com/dev-labs-bg/hr-bot/blob/master/documentation/sprint/yavka-summary-EN.md)
+- [Jordan](https://github.com/dev-labs-bg/hr-bot/blob/master/documentation/sprint/jordan-summary-EN.md)
+- [Rado](https://github.com/dev-labs-bg/hr-bot/blob/master/documentation/sprint/rado-summary-EN.md)
 
 
 # What did we achieve?
-- We have 2 bots. The first one is [Custom](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/Sprint-Yavka-summary.md), and another one is developed on [Meya](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/Sprint-Jordan-summary.md).
-- We have 2 Microservices (Docker) - [for user management](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/Sprint-Jordan-summary.md) and one [for GitHub Users Fetching](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/Sprint-Rado-summary.md).
+- We have 2 bots. The first one is [Custom](https://github.com/dev-labs-bg/hr-bot/blob/master/documentation/sprint/yavka-summary-EN.md), and another one is developed on [Meya](https://github.com/dev-labs-bg/hr-bot/blob/master/documentation/sprint/jordan-summary-EN.md).
+- We have 2 Microservices (Docker) - [for user management](https://github.com/dev-labs-bg/hr-bot/blob/master/documentation/sprint/jordan-summary-EN.md) and one [for GitHub Users Fetching](https://github.com/dev-labs-bg/hr-bot/blob/master/documentation/sprint/rado-summary-EN.md).
 
 # Demo
 - [Video - BG](https://www.youtube.com/watch?v=2KjhpK7ilKU&list=PLy-56ctrBPh-f8FM-MhA-vXfwr2odnmkj&index=2)
