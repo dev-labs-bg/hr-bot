@@ -1,3 +1,5 @@
+This project was born as part of an initiative of doing short 5-day sprints on trying to solve some programming challenges. At the end we summarize the experience and knowledge.
+
 In next lines we'll present our sprint idea, what challenges we took, what we achieved, and also our daily notes (took during the sprint week)
 
 # Team
