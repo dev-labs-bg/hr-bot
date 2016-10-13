@@ -67,3 +67,13 @@ Always go to project root, before executing next commands.
     - Path `microservices/fetchers/github/`
     - API Endpoints:
         - [GET] `localhost:8081/fetch` - On each get request it will fetch 10 GitHub users and will return them as response.
+        
+# Contributions
+
+We accept all kind of contributions that you guys make and we'll love you for them! <3
+
+If you find any problems, have any suggestions or want to discuss something you can either open an issue [here](https://github.com/dev-labs-bg/hr-bot/issues) or make a pull request with code changes instead.
+
+If you want to contribute, but you're not sure where to start you can always take a look at the issues [here](https://github.com/dev-labs-bg/hr-bot/issues) we have open and pick up with some of them.
+
+Try to follow our conventions for naming issues, branches and existing code structure.
