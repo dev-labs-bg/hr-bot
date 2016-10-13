@@ -91,7 +91,7 @@ HR Bot: What's your experience with php (in years)?
 Me: 3
 HR Bot: I'll reach you later, when I have the right job for you! Good bye :)
 ```
-![flow](https://gitlab.com/dev-labs-bg/hr-bot/raw/master/meya-flow.png)
+![flow](https://raw.githubusercontent.com/dev-labs-bg/hr-bot/master/documentation/sprint/img/meya-flow.png)
 
 # Заключение
 - При разписването на Docker environments - абстракцията, която получаваш за конфигурация е определено developers friendly. Обаче всичко останало, което е от другата страна на DevOps, а именно server administration - е малко по-трудно. Положителното е, че веднъж като конфигурираш един Docker environment - после единствено го поддържаш. Разбира се - първо проверете дали някой вече не го е направил.
