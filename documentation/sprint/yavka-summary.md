@@ -1,6 +1,6 @@
 ### Disclaimer:
 
-![bot](https://gitlab.com/dev-labs-bg/hr-bot/raw/767949dd64c1d000d0c6fff05977c614406a8bce/bot/img/bot.JPG)
+![bot](https://raw.githubusercontent.com/dev-labs-bg/hr-bot/master/documentation/sprint/img/bot.JPG)
 
 Всичко, което съм написал е плод на 3-4 дни проучване. Ако се интересувате от нещо, може да ме питате, но не очаквайте да знам много по темата. Освен това, описанията ми на теорията, на която се базирам, са много кратки и непълни. Добавил съм линкове към материалите, които съм използвал, в квадратни скоби.
 
@@ -16,7 +16,7 @@
 
 Разбивката на microservice-ите и реда, в който се случват нещата може да видите на схемата на дъската:
 
-![Day 1](https://gitlab.com/dev-labs-bg/hr-bot/raw/767949dd64c1d000d0c6fff05977c614406a8bce/bot/img/day1.jpg)
+![Day 1](https://raw.githubusercontent.com/dev-labs-bg/hr-bot/master/documentation/sprint/img/day1.jpg)
 
 ### Ден втори:
 
@@ -36,7 +36,7 @@
 
 Все пак, проучването не бе изгубено време. Взаимствах идеята за някакъв общ парсър, който анализира изречения и прави заключения за тях. “Изкусвеният интелект“ генерира отговори на база на тези заключения[3]. Ето концептуална схема на това, което ми се въртеше в главата:
 
-![Parser](https://gitlab.com/dev-labs-bg/hr-bot/raw/767949dd64c1d000d0c6fff05977c614406a8bce/bot/img/parser.JPG)
+![Parser](https://raw.githubusercontent.com/dev-labs-bg/hr-bot/master/documentation/sprint/img/parser.JPG)
 
 (Споко, има обяснение какво представлява контекстът по-долу, така че няма нужда да ръкописен json :)
 
@@ -120,7 +120,7 @@ I<PRP>  have<VBP>  9001<CD>  years<NNS> of<IN>  js<NN>  experience<NN>
 
 Някой от вас вече знаят какво съм намислил. След като разговорът има краен брой дискретни състояния, мога да го моделирам като краен автомат. Ето как изглежда схемата на по-горния сценарий: 
 
-![Finite state machines](https://gitlab.com/dev-labs-bg/hr-bot/raw/767949dd64c1d000d0c6fff05977c614406a8bce/bot/img/state_machine.jpg)
+![Finite state machines](https://raw.githubusercontent.com/dev-labs-bg/hr-bot/master/documentation/sprint/img/state_machine.jpg)
 
 В тази картинка има проблем, обаче.
 
