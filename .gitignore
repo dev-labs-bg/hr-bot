@@ -5,5 +5,10 @@ logs/
 sessions/
 microservices/users/symfony/var/SymfonyRequirements.php
 microservices/users/symfony/var/bootstrap.php.cache
+*.pyc
+tmp/
+.DS_Store
+goap/
+goapy/
 
 .idea/
