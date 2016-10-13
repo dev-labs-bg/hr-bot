@@ -1,6 +1,6 @@
 ### Disclaimer:
 
-![bot](https://gitlab.com/dev-labs-bg/hr-bot/raw/767949dd64c1d000d0c6fff05977c614406a8bce/bot/img/bot.JPG)
+![bot](https://raw.githubusercontent.com/dev-labs-bg/hr-bot/master/documentation/sprint/img/bot.JPG)
 
 All information in this file is the result of 3-4 day's worth of research. The descriptions of the theory I'm basing this prototype on are incomplete (and, possibly, completely inaccurate). I've added reference links to all materials I've used whilst making this. Feel free to help yourself.
 
@@ -14,7 +14,7 @@ After writing all the steps down, it became clear we can split everything into i
 
 You can see the initial project sketch below:
 
-![Day 1](https://gitlab.com/dev-labs-bg/hr-bot/raw/767949dd64c1d000d0c6fff05977c614406a8bce/bot/img/day1.jpg)
+![Day 1](https://raw.githubusercontent.com/dev-labs-bg/hr-bot/master/documentation/sprint/img/day1.jpg)
 
 ### Day two:
 
@@ -32,7 +32,7 @@ I decided I wouldn't look for a different framework. If I were to lean on some f
 
 Some Googling later, I came upon two articles[3][4] detailing different strategies for building chatbots. I spent the rest of the day in disbelief. The standard for writing chatbots leans on pattern matching and psychological trickery more than any algorithm. Yet, not all was lost. I adopted the idea of analysing the input and generating a sentence context from it. The AI could generate replies using whatever information it could infer from the input sentence[3]. Here's an example of what I had in mind:
 
-![Parser](https://gitlab.com/dev-labs-bg/hr-bot/raw/767949dd64c1d000d0c6fff05977c614406a8bce/bot/img/parser.JPG)
+![Parser](https://raw.githubusercontent.com/dev-labs-bg/hr-bot/master/documentation/sprint/img/parser.JPG)
 
 (Don't worry, there's an explanation for the context below. You don't need to read the handwritten json.)
 
@@ -116,7 +116,7 @@ This type of railroading is convenient, because there is a finite set of states 
 
 While every step of the conversation could be encoded as a set of if-else checks, the code quickly turns into spaghetti. A more flexible way for defining a conversation flow is needed for defining complex interactions. We enter the domain of finite state machines. Here's what the graph for our example conversation looks like:
 
-![Finite state machines](https://gitlab.com/dev-labs-bg/hr-bot/raw/767949dd64c1d000d0c6fff05977c614406a8bce/bot/img/state_machine.jpg)
+![Finite state machines](https://raw.githubusercontent.com/dev-labs-bg/hr-bot/master/documentation/sprint/img/state_machine.jpg)
 
 You can see the problem with this approach even early on.
 
