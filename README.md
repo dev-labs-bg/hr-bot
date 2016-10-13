@@ -3,7 +3,7 @@ Hey, first checkout **Sprint summary section** please. There you can find detail
 In the current README file there is generic information about the project and instructions how you can run already implemented features.
 
 # Idea
-HR Bot that finds the right persons for a Recruiter's job. It has automated network of users. On a Recruiter job opportunity, the bot starts conversation with the users those matched the job requirements.
+Automate gathering information about developers from LinkedIn, GitHub, and StackOverflow profiles. We'd also make a landing page where employers can search for people with various skills. Once we have a search query, a bot would start a conversation with the developer via email.
 
 # Sprint summary (Project background)
 Here you can find details about current state of the project, what we achieved and what's next.
