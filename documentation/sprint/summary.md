@@ -14,7 +14,7 @@ TL;DR: Bot, който оставя HR без работа.
 Най-общо, идеята бе да съберем информация за програмисти от профилите им в LinkedIn, GitHub и StackOverflow в наша база от данни. Имаме landing page, на който работодатели могат да търсят хора с определени умения. Когато получим запитване, търсим какви хора имаме в базата, след което им пращаме имейл от HR бота, който започва да ги разпитва. Ако им хареса предложението (и програмистът отговаря на описанието на работодателя), пращаме информация на работодателя кои хора сме намерили.
 След като написахме стъпките на дъската видяхме, че нещата естествено се разбиват на отделни модули. Данчо предложи да пробваме да ги направим на отделни microservices, и пое задачата да види как ще стане това. Радо каза, че не правил REST API до момента, така че пое задачата да направи GitHub, LinkedIn и StackOverflow parser-и, като решихме първо да се започне с GitHub, защото имат API (за разлика от LinkedIn, за който трябва някакъв scraper). За мен остана имплементацията на бота, с идеята Данчо и Радо да се включат след като свършат своите задачи, и да прескочат фазата на проучване.
 Разбивката на microservice-ите и реда, в който се случват нещата може да видите на схемата на дъската:
-![Day 1](https://gitlab.com/dev-labs-bg/hr-bot/raw/a01cd34310a64a1861fe374552a6fde6a4a2299d/bot/img/day1.jpg)
+![Day 1](https://github.com/dev-labs-bg/hr-bot/blob/master/documentation/sprint/img/day1.jpg)
 
 **В резултат на първоначалната среща, то си разпределихме задачите по следния начин**:
 
@@ -23,14 +23,14 @@ TL;DR: Bot, който оставя HR без работа.
 - Данчо  - Имплементация на Microservices с Docker, User REST API 
 
 # Ден втори, трети, четвърти, пети - лични мемоари
-- [Явка](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/Sprint-Yavka-summary.md)
-- [Данчо](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/Sprint-Jordan-summary.md)
-- [Радо](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/Sprint-Rado-summary.md)
+- [Явка](https://github.com/dev-labs-bg/hr-bot/blob/master/documentation/sprint/yavka-summary.md)
+- [Данчо](https://github.com/dev-labs-bg/hr-bot/blob/master/documentation/sprint/jordan-summary.md)
+- [Радо](https://github.com/dev-labs-bg/hr-bot/blob/master/documentation/sprint/rado-summary.md)
 
 
 # Какво постигнахме?
-- Имаме 2 бота. Единият [Custom](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/Sprint-Yavka-summary.md), другия разписан на [Meya](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/Sprint-Jordan-summary.md).
-- Имаме 2 Microservices (Docker) - [за управление на потребители](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/Sprint-Jordan-summary.md) и [за извличване на GitHub потребители с техните skills](https://gitlab.com/dev-labs-bg/hr-bot/blob/master/Sprint-Rado-summary.md).
+- Имаме 2 бота. Единият [Custom](https://github.com/dev-labs-bg/hr-bot/blob/master/documentation/sprint/yavka-summary.md), другия разписан на [Meya](https://github.com/dev-labs-bg/hr-bot/blob/master/documentation/sprint/jordan-summary.md).
+- Имаме 2 Microservices (Docker) - [за управление на потребители](https://github.com/dev-labs-bg/hr-bot/blob/master/documentation/sprint/jordan-summary.md) и [за извличване на GitHub потребители с техните skills](https://github.com/dev-labs-bg/hr-bot/blob/master/documentation/sprint/rado-summary.md).
 
 # Demo
 - [Видео](https://www.youtube.com/watch?v=2KjhpK7ilKU&list=PLy-56ctrBPh-f8FM-MhA-vXfwr2odnmkj&index=2)
